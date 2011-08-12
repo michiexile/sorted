@@ -8,5 +8,5 @@ fi
 
 mkdir $2
 pushd $2
-mplayer -vo png:5 -vf framestep=96,scale=64x48 $1
+mplayer -vo png:5 -vf framestep=96,scale=64:48 $1
 popd
