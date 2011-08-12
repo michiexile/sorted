@@ -7,5 +7,6 @@ then
 fi
 
 mkdir $2
-cd $2
-mplayer -vo png:z=5 -vf frameskip=96 $1
+pushd $2
+mplayer -vo png:z=5 -vf frameskip=96,scale=64x48 $1
+popd
